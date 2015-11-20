@@ -29,4 +29,9 @@ public class TestManagerImpl implements TestManager {
         return testDao.findAllTests();
     }
 
+    @Override
+    public Test find(int id) {
+        return testDao.find(id);
+    }
+
 }

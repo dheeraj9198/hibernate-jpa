@@ -32,4 +32,9 @@ public class TestDaoImpl implements TestDao {
         criteriaQuery.select(root);
         return entityManager.createQuery(criteriaQuery).getResultList();
     }
+
+    @Override
+    public Test find(int id) {
+        return entityManager.find(Test.class,id);
+    }
 }

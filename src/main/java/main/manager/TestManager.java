@@ -11,4 +11,6 @@ public interface TestManager {
     void insertTest(Test test);
 
     List<Test> findAllTests();
+
+    Test find(int id);
 }

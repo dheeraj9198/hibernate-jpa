@@ -12,4 +12,6 @@ public interface TestDao {
     void insertTest(Test test);
 
     List<Test> findAllTests();
+
+    Test find(int id);
 }
